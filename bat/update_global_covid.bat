@@ -4,6 +4,7 @@ set ccomment=LENOVO-%mydate%
 echo %ccomment%
 jupyter nbconvert \projects\global-covid\notebooks\covid_by_countries.ipynb --no-input --no-prompt --to html
 copy notebooks\covid_by_countries.html \projects\global-covid\index.html /Y
+cd \projects\global_covid\
 git add .
 git push
 git commit -m LENOVO
