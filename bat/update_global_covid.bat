@@ -8,3 +8,5 @@ cd \projects\global_covid\
 git add .
 git push
 git commit -m LENOVO
+echo "open https://ace108.github.io/global-covid/"
+echo "open https://aitel.weebly.com/covid-19-by-countries.html"
