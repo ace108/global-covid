@@ -14,3 +14,4 @@ git commit -m LENOVO
 echo "open https://api.covid19api.com/summary"
 echo "open https://ace108.github.io/global-covid/"
 echo "open https://aitel.weebly.com/covid-19-by-countries.html"
+echo "update the jupyter notebook first please"
