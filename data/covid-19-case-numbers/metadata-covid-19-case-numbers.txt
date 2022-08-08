@@ -1,9 +1,9 @@
-# Metadata for COVID-19 case numbers
+# Metadata for COVID-19 Case Numbers
 ---
 Identifier: '76abf3e8-2951-43e9-9a23-c19bf0f4bc44'
 Name: 'covid-19-case-numbers'
-Title: 'COVID-19 case numbers'
-Description: 'Numbers on COVID-19 related data'
+Title: 'COVID-19 Case Numbers'
+Description: 'Data on COVID-19 cases'
 Topics:
   - 'Health'
 Keywords:
@@ -18,74 +18,22 @@ Sources:
   - 'Ministry of Health'
 License: 'https://data.gov.sg/open-data-licence'
 Frequency: 'Ad-hoc'
-Coverage: '2021-05-01 to 2021-10-25'
-Last Updated: '2021-10-26T01:24:31.369809'
+Coverage: '2020-01-23 to 2022-08-07'
+Last Updated: '2022-08-07T14:36:57.040939'
 Resources:
   -
-    Identifier: 'c2c76b8e-0520-4ce5-b378-ce96d7f4d62a'
-    Title: 'Breakdown of Number of Active Cases in Hospital, COVID-19 Treatment Facilities,
-      Community'
-    Url: 'https://storage.data.gov.sg/covid-19-case-numbers/resources/breakdown-of-number-of-active-cases-in-hospital-covid-19-treatment-facilities-community-2021-10-26T01-14-51Z.csv'
-    Format: 'CSV'
-    Coverage: '2021-10-19 to 2021-10-25'
-    Last Updated: '2021-10-26T01:14:51.442886'
-    Schema:
-      -
-        Name: 'date'
-        Title: 'Date'
-        Type: 'datetime'
-        Sub Type: 'date'
-        Format: 'YYYY-MM-DD'
-      -
-        Name: 'status'
-        Title: 'Status'
-        Type: 'text'
-        Sub Type: 'general'
-      -
-        Name: 'case'
-        Title: 'Case'
-        Type: 'numeric'
-        Sub Type: 'general'
-        Unit Of Measure: 'cases'
-  -
-    Identifier: '6c14814b-09b7-408e-80c4-db3d393c7c15'
-    Title: 'Number of Community Cases by Age'
-    Url: 'https://storage.data.gov.sg/covid-19-case-numbers/resources/number-of-community-cases-by-age-2021-10-26T01-16-19Z.csv'
-    Format: 'CSV'
-    Coverage: '2021-09-28 to 2021-10-25'
-    Last Updated: '2021-10-26T01:16:19.296094'
-    Schema:
-      -
-        Name: 'pr_date'
-        Title: 'Date'
-        Type: 'datetime'
-        Sub Type: 'date'
-        Format: 'YYYY-MM-DD'
-      -
-        Name: 'age_group'
-        Title: 'Age group'
-        Type: 'text'
-        Sub Type: 'general'
-      -
-        Name: 'count_of_case'
-        Title: 'Count of case'
-        Type: 'numeric'
-        Sub Type: 'general'
-        Unit Of Measure: 'No. of cases'
-  -
     Identifier: '9de30d8d-3c0d-48ab-8c1b-4a7dc03d687a'
-    Title: 'Deaths and Active Cases in ICU, Requiring Oxygen Supplementation or Hospitalised'
-    Url: 'https://storage.data.gov.sg/covid-19-case-numbers/resources/deaths-and-active-cases-in-icu-requiring-oxygen-supplementation-or-hospitalised-2021-10-26T01-17-27Z.csv'
+    Title: 'Patients Needing Oxygen Supplementation, ICU Care or Died, by Age Groups'
+    Url: 'https://storage.data.gov.sg/covid-19-case-numbers/resources/patients-needing-oxygen-supplementation-icu-care-or-died-by-age-groups-2022-08-07T14-13-58Z.csv'
     Format: 'CSV'
-    Coverage: '2021-09-28 to 2021-10-25'
-    Last Updated: '2021-10-26T01:17:27.055770'
+    Coverage: '2022-07-11 to 2022-08-07'
+    Last Updated: '2022-08-07T14:13:58.299757'
     Schema:
       -
         Name: 'day_of_as_of_date'
         Title: 'Day of as of date'
-        Type: 'datetime'
-        Sub Type: 'date'
-        Format: 'YYYY-MM-DD'
+        Type: 'text'
+        Sub Type: 'general'
       -
         Name: 'age_groups'
         Title: 'Age groups'
@@ -103,109 +51,157 @@ Resources:
         Sub Type: 'general'
         Unit Of Measure: 'No. of cases'
   -
-    Identifier: '3c6c43ca-9703-48e4-a288-0d2d24a1946a'
-    Title: 'Proportion (%) of cases who died, by age and vaccination status'
-    Url: 'https://storage.data.gov.sg/covid-19-case-numbers/resources/proportion-of-cases-who-died-by-age-and-vaccination-status-2021-10-23T18-15-09Z.csv'
+    Identifier: '6c14814b-09b7-408e-80c4-db3d393c7c15'
+    Title: 'Number of Local Cases by Age'
+    Url: 'https://storage.data.gov.sg/covid-19-case-numbers/resources/number-of-local-cases-by-age-2022-08-07T14-15-35Z.csv'
     Format: 'CSV'
-    Coverage: '2021-05-01 to 2021-09-30'
-    Description: '1 May to 30 Sep 2021'
-    Last Updated: '2021-10-23T18:15:09.594959'
+    Coverage: '2022-07-11 to 2022-08-07'
+    Last Updated: '2022-08-07T14:15:35.740837'
     Schema:
       -
-        Name: 'age'
-        Title: 'Age'
+        Name: 'pr_date'
+        Title: 'Press Release Date'
+        Type: 'datetime'
+        Sub Type: 'date'
+        Format: 'YYYY-MM-DD'
+      -
+        Name: 'age_group'
+        Title: 'Age group'
         Type: 'text'
         Sub Type: 'general'
       -
-        Name: 'unvaccinated'
-        Title: 'Unvaccinated'
+        Name: 'count_of_case'
+        Title: 'Count of case'
         Type: 'numeric'
-        Sub Type: 'percentage'
-        Description: 'Percentages are expressed as a value over 100, i.e. "100" represents
-          100%'
-      -
-        Name: 'partially_vaccinated'
-        Title: 'Partially vaccinated'
-        Type: 'numeric'
-        Sub Type: 'percentage'
-        Description: 'Percentages are expressed as a value over 100, i.e. "100" represents
-          100%'
-      -
-        Name: 'fully_vaccinated'
-        Title: 'Fully vaccinated'
-        Type: 'numeric'
-        Sub Type: 'percentage'
-        Description: 'Percentages are expressed as a value over 100, i.e. "100" represents
-          100%'
+        Sub Type: 'general'
+        Unit Of Measure: 'No. of cases'
   -
-    Identifier: '60c679fc-8c3c-49dc-beaf-95008619d5df'
-    Title: 'Proportion (%) of cases ever in ICU care or died, by age and vaccination
-      status'
-    Url: 'https://storage.data.gov.sg/covid-19-case-numbers/resources/proportion-of-cases-ever-in-icu-care-or-died-by-age-and-vaccination-status-2021-10-23T18-11-54Z.csv'
+    Identifier: '99334c54-479f-472d-a6f5-fe38d2f9b1aa'
+    Title: 'Week on Week Infection Ratio'
+    Url: 'https://storage.data.gov.sg/covid-19-case-numbers/resources/week-on-week-infection-ratio-2022-08-06T12-27-58Z.csv'
     Format: 'CSV'
-    Coverage: '2021-05-01 to 2021-09-30'
-    Description: '1 May to 30 Sep 2021'
-    Last Updated: '2021-10-23T18:11:54.500995'
+    Coverage: '2022-06-07 to 2022-08-06'
+    Last Updated: '2022-08-06T12:27:58.519541'
     Schema:
       -
-        Name: 'age'
-        Title: 'Age'
+        Name: 'pr_date'
+        Title: 'Pr date'
         Type: 'text'
         Sub Type: 'general'
       -
-        Name: 'unvaccinated'
-        Title: 'Unvaccinated'
+        Name: 'ratio_comm_cases_pw_over_wb'
+        Title: 'Ratio'
         Type: 'numeric'
-        Sub Type: 'percentage'
-        Description: 'Percentages are expressed as a value over 100, i.e. "100" represents
-          100%'
-      -
-        Name: 'partially_vaccinated'
-        Title: 'Partially vaccinated'
-        Type: 'numeric'
-        Sub Type: 'percentage'
-        Description: 'Percentages are expressed as a value over 100, i.e. "100" represents
-          100%'
-      -
-        Name: 'fully_vaccinated'
-        Title: 'Fully vaccinated'
-        Type: 'numeric'
-        Sub Type: 'percentage'
-        Description: 'Percentages are expressed as a value over 100, i.e. "100" represents
-          100%'
+        Sub Type: 'general'
+        Unit Of Measure: 'Ratio'
   -
-    Identifier: '60b1a923-1a5e-44ef-a4ae-046345146725'
-    Title: 'Proportion of cases ever requiring O2, in ICU care or died, by age & vaccination
+    Identifier: '783f0c4c-caf7-4818-8683-760f3d7f0757'
+    Title: 'Moving ave of deaths & active cases in ICU, per 100k population, by vax
       status'
-    Url: 'https://storage.data.gov.sg/covid-19-case-numbers/resources/proportion-of-cases-ever-requiring-o2-in-icu-care-or-died-by-age-vaccination-status-2021-10-24T03-48-32Z.csv'
+    Url: 'https://storage.data.gov.sg/covid-19-case-numbers/resources/moving-ave-of-deaths-active-cases-in-icu-per-100k-population-by-vax-status-2022-08-07T14-26-31Z.csv'
     Format: 'CSV'
-    Coverage: '2021-05-01 to 2021-09-30'
-    Description: '1 May to 30 Sep 2021'
-    Last Updated: '2021-10-24T03:48:32.110961'
+    Coverage: '2022-07-11 to 2022-08-07'
+    Last Updated: '2022-08-07T14:26:31.892195'
     Schema:
       -
-        Name: 'age'
-        Title: 'Age'
+        Name: 'as_of_date'
+        Title: 'As of date'
+        Type: 'datetime'
+        Sub Type: 'date'
+        Format: 'YYYY-MM-DD'
+      -
+        Name: 'clinicalstatus'
+        Title: 'Clinicalstatus'
         Type: 'text'
         Sub Type: 'general'
       -
-        Name: 'unvaccinated'
-        Title: 'Unvaccinated'
-        Type: 'numeric'
-        Sub Type: 'percentage'
-        Description: 'Percentages are expressed as a value over 100, i.e. "100" represents
-          100%'
+        Name: 'vaccination_status'
+        Title: 'Vaccination status'
+        Type: 'text'
+        Sub Type: 'general'
       -
-        Name: 'partially_vaccinated'
-        Title: 'Partially vaccinated'
+        Name: 'count_of_case'
+        Title: 'Count of case'
         Type: 'numeric'
-        Sub Type: 'percentage'
-        Description: 'Percentages are expressed as a value over 100, i.e. "100" represents
-          100%'
+        Sub Type: 'general'
+        Unit Of Measure: 'Cases'
+  -
+    Identifier: 'aa6ba85e-c256-4eef-99ca-7849c7d6f148'
+    Title: 'Moving ave of deaths & active cases in ICU, per 100k population, by vax
+      status (detailed)'
+    Url: 'https://storage.data.gov.sg/covid-19-case-numbers/resources/moving-ave-of-deaths-active-cases-in-icu-per-100k-population-by-vax-status-detailed-2022-08-07T14-29-14Z.csv'
+    Format: 'CSV'
+    Coverage: '2022-07-11 to 2022-08-07'
+    Last Updated: '2022-08-07T14:29:14.826686'
+    Schema:
       -
-        Name: 'fully_vaccinated'
-        Title: 'Fully vaccinated'
+        Name: 'as_of_date'
+        Title: 'As of date'
+        Type: 'datetime'
+        Sub Type: 'date'
+        Format: 'YYYY-MM-DD'
+      -
+        Name: 'clinicalstatus'
+        Title: 'Clinical Status'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'vaccination_status'
+        Title: 'Vaccination Status'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'count_of_case'
+        Title: 'Count of case'
         Type: 'numeric'
-        Sub Type: 'percentage'
-        Description: 'Percentages are expressed as a value over 100, i.e. "100" represents
-          100%'
+        Sub Type: 'general'
+        Unit Of Measure: 'Case'
+  -
+    Identifier: 'b5ae6ad5-1272-41f4-a4e5-23308ad6e32d'
+    Title: 'Daily Adult ICU Bed Utilisation'
+    Url: 'https://storage.data.gov.sg/covid-19-case-numbers/resources/daily-adult-icu-bed-utilisation-2022-08-07T14-32-36Z.csv'
+    Format: 'CSV'
+    Coverage: '2022-07-03 to 2022-08-07'
+    Last Updated: '2022-08-07T14:32:36.015750'
+    Schema:
+      -
+        Name: 'as_of_date'
+        Title: 'As of date'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'status'
+        Title: 'Status'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'value'
+        Title: 'Value'
+        Type: 'numeric'
+        Sub Type: 'general'
+        Unit Of Measure: 'ICU Beds'
+  -
+    Identifier: '400a3eb4-8702-4050-9700-988bfea7a20f'
+    Title: 'Epidemic Curve'
+    Url: 'https://storage.data.gov.sg/covid-19-case-numbers/resources/epidemic-curve-2022-08-07T14-34-32Z.csv'
+    Format: 'CSV'
+    Coverage: '2020-01-23 to 2022-08-07'
+    Last Updated: '2022-08-07T14:34:32.009743'
+    Schema:
+      -
+        Name: 'date'
+        Title: 'Date'
+        Type: 'datetime'
+        Sub Type: 'date'
+        Format: 'YYYY-MM-DD'
+      -
+        Name: 'type'
+        Title: 'Type'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'value'
+        Title: 'Value'
+        Type: 'numeric'
+        Sub Type: 'general'
+        Unit Of Measure: 'Cases'
